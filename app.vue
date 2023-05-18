@@ -1,6 +1,8 @@
 <template>
-	<div class="flex h-screen justify-center items-center">
-		<h1>"Hello"</h1>
+	<div>
+		<NuxtLayout>
+			<PromoBlocks />
+		</NuxtLayout>
 	</div>
 </template>
 
@@ -20,6 +22,9 @@ useHead({
 	],
 	htmlAttrs: {
 		lang: 'ru',
+	},
+	bodyAttrs: {
+		class: 'bg-main-back',
 	},
 });
 </script>
