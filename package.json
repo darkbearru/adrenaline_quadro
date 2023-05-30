@@ -30,10 +30,11 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^20.1.5",
-    "nuxt": "^3.4.3",
+    "nuxt": "^3.5.1",
     "prettier": "^2.8.8"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.1",
     "@nuxtjs/robots": "^3.0.0"
   }
 }

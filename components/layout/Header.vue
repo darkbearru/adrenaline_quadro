@@ -1,10 +1,12 @@
 <template>
-	<header class="flex ml-8 mt-8">
-		<div>
+	<header
+		class="sticky top-0 flex gap-4 p-4 z-30 bg-main-back bg-opacity-80 backdrop-blur-sm sm:bg-opacity-100 sm:backdrop-blur-none sm:relative sm:ml-8 sm:mt-8 sm:gap-0 sm:mr-0 sm:p-0 sm:top-auto"
+	>
+		<div class="flex-grow sm:flex-grow-0">
 			<a href="/">
 				<img
-					src="~/assets/img/adrenaline_quadro.svg"
-					class="h-[60px]"
+					src="/images/adrenaline_quadro.svg"
+					class="min-w-[240px] h-[60px]"
 					alt="Адреналин.Квадро. Продажа квадроциклов, лодок/моторов и прочих аксессуаров"
 				/>
 			</a>
