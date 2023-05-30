@@ -1,6 +1,6 @@
 <template>
 	<div class="flex justify-end sm:items-center w-full flex-wrap sm:w-auto sm:flex-nowrap mb-6">
-		<H3 class="flex-grow mb-4 sm:mb-0">Каталог товаров</H3>
+		<H3 class="flex-grow w-full mb-4 sm:auto sm:mb-0">Каталог товаров</H3>
 		<div class="flex flex-nowrap gap-2">
 			<ButtonOutline class="group p-2">
 				<SvgIconSort class="fill-second group-hover:fill-white w-5 h-5" />
