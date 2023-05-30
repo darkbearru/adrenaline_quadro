@@ -1,0 +1,40 @@
+{
+  "name": "adrenaline-quadro",
+  "version": "0.0.1",
+  "description": "The web site of company sells ATV",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/darkbearru/adrenaline_quadro.git"
+  },
+  "keywords": [
+    "web",
+    "site",
+    "atv",
+    "nuxt",
+    "vue",
+    "js"
+  ],
+  "author": "Alexey Abramenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkbearru/adrenaline_quadro/issues"
+  },
+  "homepage": "https://github.com/darkbearru/adrenaline_quadro#readme",
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@types/node": "^20.1.5",
+    "nuxt": "^3.5.1",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "^3.0.1",
+    "@nuxtjs/robots": "^3.0.0"
+  }
+}
