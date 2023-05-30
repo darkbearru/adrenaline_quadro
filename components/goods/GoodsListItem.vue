@@ -47,7 +47,7 @@ defineProps({
 	@apply relative flex flex-col bg-second rounded-lg;
 	width: calc(50% - 0.5rem);
 	picture {
-		@apply w-full h-[148px] sm:h-[212px] rounded-tl-lg rounded-tr-lg bg-second object-contain;
+		@apply w-full h-auto rounded-tl-lg rounded-tr-lg bg-second object-contain;
 		img {
 			@apply rounded-tl-lg rounded-tr-lg mx-auto;
 		}
