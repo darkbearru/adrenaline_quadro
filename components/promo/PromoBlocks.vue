@@ -1,16 +1,17 @@
 <template>
-	<section class="h-full mt-8 w-full overflow-hidden">
-		<ul class="flex gap-2 md:gap-4 h-full">
-			<PromoBlock class="bg-main" :blockStatus="PromoBlockStatus.Start" />
+	<section class="h-full mt-8 mb-10 w-full overflow-x-clip hidden sm:block">
+		<ul class="flex gap-2 md:gap-4">
+			<PromoBlock :blockStatus="PromoBlockStatus.Start" />
 			<PromoBlock
-				class="bg-dark-gray"
 				v-for="(item, index) in promoBlocks"
 				:key="item.id"
 				:title="item.title"
 				:blockStatus="item.status"
+				:imgActive="item.active"
+				:imgNormal="item.normal"
 				@click="changeBlockStatus(index)"
 			/>
-			<PromoBlock class="bg-main" :blockStatus="PromoBlockStatus.End" />
+			<PromoBlock :blockStatus="PromoBlockStatus.End" />
 		</ul>
 	</section>
 </template>
@@ -19,9 +20,11 @@
 import { PromoBlockStatus } from '~/types/types';
 import promoBlockData from '~/data/promoBlockData.json';
 const promoBlocks = reactive(
-	promoBlockData.map(({ id, title }, index) => ({
+	promoBlockData.map(({ id, title, img_active, img }, index) => ({
 		id,
 		title,
+		active: img_active,
+		normal: img,
 		status: index === 0 ? PromoBlockStatus.Active : PromoBlockStatus.NotActive,
 	})),
 );
